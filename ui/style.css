@@ -37,4 +37,9 @@ body {
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
-  <
+  <!-------fro carrousel -->
+   .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
