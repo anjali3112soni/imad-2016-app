@@ -16,7 +16,7 @@ app.get('/action-one', function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'action-one'));
 });
 app.get('/ui/007.gif', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(path.join(__dirname, 'ui', '007.gif'));
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
