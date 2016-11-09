@@ -18,7 +18,7 @@ app.get('/ui/blog.html', function(req,res){
 app.get('/ui/p5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p5.jpg'));
 });
-
+ /*images-----------------*/
 app.get('/ui/p2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p2.jpg'));
 });
@@ -30,6 +30,12 @@ app.get('/ui/p4.jpg', function (req, res) {
 });
 app.get('/ui/p5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p5.jpg'));
+});
+/*end_images------------------------------*/
+
+/*HONE_LINK-------------------*/
+app.get('/ui/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/git.png', function (req, res) {
