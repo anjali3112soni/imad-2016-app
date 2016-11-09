@@ -38,9 +38,9 @@ body {
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
-  /*.nav{
+  #myNavbar{
       background-color : #ffffff;
-      color: #000000;}*/
+      color: #000000;}
       
      
   
