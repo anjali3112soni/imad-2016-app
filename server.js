@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 });
 
 /*db_connection---------------------*/
-var pool = new Pool(config);
+/*var pool = new Pool(config);
 
 
 app.get('/text', function(req,res){
@@ -36,7 +36,7 @@ app.get('/text', function(req,res){
 
     });
     
-});
+});*/
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
