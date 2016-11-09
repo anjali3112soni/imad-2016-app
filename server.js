@@ -19,12 +19,13 @@ app.get('/', function (req, res) {
 });
 
 /*db_connection---------------------*/
+
 var pool = new Pool(config);
 
 
 app.get('/text', function(req,res){
  
- pool.query('SELECT * FROM signup', function(err, result) {
+ pool.query('SELECT * FROM rough', function(err, result) {
       // handle an error from the query
       if(err) 
       {res.status(500).send(err.toString());}
