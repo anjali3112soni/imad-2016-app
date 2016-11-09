@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var pool= require('pg').Pool;
+var Pool= require('pg').Pool;
 
 var config = {
             user :'anjali3112soni' ,
@@ -20,12 +20,12 @@ app.get('/', function (req, res) {
 });
 
 /*db_connection---------------------*/
-var pool = new Pool(config);
+var Pool = new Pool(config);
 
 
 app.get('/text', function(req,res){
 //DBMSSSSSSSSSSSS 
- pool.query('SELECT * FROM login', function(err, result) {
+ Pool.query('SELECT * FROM login', function(err, result) {
       // handle an error from the query
       if(err) 
       {res.send('my name is anjali');}
