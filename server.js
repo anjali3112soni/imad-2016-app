@@ -23,7 +23,7 @@ var pool = new Pool(config);
 
 
 app.get('/text', function(req,res){
-//DBMSSSSSSSSSSSS 
+ 
  pool.query('SELECT * FROM login', function(err, result) {
       // handle an error from the query
       if(err) 
