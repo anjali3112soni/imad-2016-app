@@ -24,10 +24,10 @@ var pool = new Pool(config);
 
 app.get('/text', function(req,res){
  
- pool.query('SELECT * FROM login', function(err, result) {
+ pool.query('SELECT * FROM Login', function(err, result) {
       // handle an error from the query
       if(err) 
-      {res.status(500).send.send(err.toString());}
+      {res.status(500).send(err.toString());}
           else
           {
               res.send(JSON.stringify(result.rows));
