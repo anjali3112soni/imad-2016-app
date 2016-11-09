@@ -39,8 +39,9 @@ body {
       color: #1abc9c !important;
   }
   
+ 
+  /*carousel*/
   
-  <!-------fro carrousel -->
    .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
