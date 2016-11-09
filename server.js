@@ -4,17 +4,15 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var pool= require('pg').Pool;
+var Pool= require('pg').Pool;
 
 var config = {
             user :'anjali3112soni' ,
             database :'anjali3112soni' ,
              host :'db.imad.hasura.imad.io',
             port:'locahost:5432',
-           
-            password:process.env.DB_PASSWORD
-    
-            };
+             password:process.env.DB_PASSWORD
+             };
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
