@@ -24,8 +24,19 @@ var pool = new Pool(config);
 
 
 app.get('/text-db', function(req,res){
-//DBMSSSSSSSSSSSS  
+//DBMSSSSSSSSSSSS 
+ pool.query('SELECT *  FROM login', function(err, result) {
+      // handle an error from the query
+      if(err) 
+      {res.status(500).send(err.toString());}
+          else
+          {
+              res.seng(JSON.stringify(result));
+          }
+      
 
+    });
+    
 });
 
 app.get('/ui/style.css', function (req, res) {
