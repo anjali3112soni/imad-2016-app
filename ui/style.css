@@ -44,6 +44,6 @@ body {
   
    .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: auto;
+      width: 50%;
       margin: auto;
   }
