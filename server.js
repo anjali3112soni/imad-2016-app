@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var pool= require('pg').pool;
 
 var config = {
-            user :'	anjali3112soni' ,
+            user :'anjali3112soni' ,
             database :'anjali3112soni' ,
             port:'5432',
             host :'db.imad.hasura.imad.io',
