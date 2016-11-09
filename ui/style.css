@@ -38,7 +38,11 @@ body {
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
-  
+  .navbar-default{
+      background-color : #ffffff;
+      color: #000000;
+      
+  }
  
   /*carousel*/
   
