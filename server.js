@@ -24,7 +24,8 @@ var pool = new Pool(config);
 
 
 app.get('/text-db', function(req,res){
-//DBMSSSSSSSSSSSS    
+//DBMSSSSSSSSSSSS  
+
 });
 
 app.get('/ui/style.css', function (req, res) {
