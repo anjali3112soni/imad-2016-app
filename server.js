@@ -8,7 +8,7 @@ var pool= require('pg').pool;
 
 var config = {
             user :'	anjali3112soni' ,
-            database :'anjali3112son' ,
+            database :'anjali3112soni' ,
             port:'5432',
             host :'db.imad.hasura.imad.io',
             password: process.env.DB_PASSWORD
@@ -17,6 +17,14 @@ var config = {
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+/*db_connection---------------------*/
+var pool = new Pool(config);
+
+
+app.get('/text-db', function(req,res){
+//DBMSSSSSSSSSSSS    
 });
 
 app.get('/ui/style.css', function (req, res) {
