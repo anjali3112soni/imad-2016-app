@@ -43,8 +43,8 @@ app.get('/email',function (req, res) {
     
         var username = req.query.user; //mytext is the name of your input box
    var pass = req.query.password; //
-    res.send('Your Text:' +myText);
-    
+    res.send('Your Text:' +username);
+    res.send('Your Text:' +pass);
     });
 
 
