@@ -31,7 +31,7 @@ app.get('/text-db', function(req,res){
       {res.send('my name is anjali');}
           else
           {
-              res.seng(JSON.stringify(result));
+              res.send(JSON.stringify(result));
           }
       
 
