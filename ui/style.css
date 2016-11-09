@@ -38,7 +38,7 @@ body {
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
-  #myNavbar{
+  .navbar-header{
       background-color : #ffffff;
       color: #000000;}
       
