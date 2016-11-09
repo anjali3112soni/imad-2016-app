@@ -23,9 +23,9 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 
 
-app.get('/text-db', function(req,res){
+app.get('text-db', function(req,res){
 //DBMSSSSSSSSSSSS 
- pool.query('SELECT *  FROM login', function(err, result) {
+ pool.query('SELECT * FROM login', function(err, result) {
       // handle an error from the query
       if(err) 
       {res.send('my name is anjali');}
