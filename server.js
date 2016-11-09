@@ -4,12 +4,12 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var Pool= require('pg').Pool;
+var pool= require('pg').Pool;
 
 var config = {
             user :'anjali3112soni' ,
             database :'anjali3112soni' ,
-            port:'5432',
+            port:'localhost:5432',
             host :'db.imad.hasura.imad.io',
             password:'db-anjali3112soni-54945'
     
@@ -20,12 +20,12 @@ app.get('/', function (req, res) {
 });
 
 /*db_connection---------------------*/
-var Pool = new Pool(config);
+var pool = new Pool(config);
 
 
 app.get('/text', function(req,res){
 //DBMSSSSSSSSSSSS 
- Pool.query('SELECT * FROM login', function(err, result) {
+ pool.query('SELECT * FROM login', function(err, result) {
       // handle an error from the query
       if(err) 
       {res.send('my name is anjali');}
