@@ -18,9 +18,20 @@ app.get('/ui/blog.html', function(req,res){
 app.get('/ui/p5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p5.jpg'));
 });
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+
+app.get('/ui/p2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p2.jpg'));
 });
+app.get('/ui/p3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p3.jpg'));
+});
+app.get('/ui/p4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p4.jpg'));
+});
+app.get('/ui/p5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p5.jpg'));
+});
+
 app.get('/ui/git.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'git.png'));
 });
