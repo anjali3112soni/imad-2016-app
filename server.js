@@ -7,13 +7,12 @@ app.use(morgan('combined'));
 var pool= require('pg').Pool;
 
 var config = {
-            host :'localhost:5432',
             user :'anjali3112soni' ,
-             password:'db-anjali3112soni-54945',
             database :'anjali3112soni' ,
-            //port:'localhost:5432',
-            
+             host :'db.imad.hasura.imad.io',
+            port:'locahost:5432',
            
+            password:process.env.DB_PASSWORD
     
             };
 
