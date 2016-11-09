@@ -11,7 +11,7 @@ var config = {
             database :'anjali3112soni' ,
             port:'5432',
             host :'db.imad.hasura.imad.io',
-            password: process.env.DB_PASSWORD
+            password:'db-anjali3112soni-54945'
     
             };
 
