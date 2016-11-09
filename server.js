@@ -39,6 +39,12 @@ app.get('/text', function(req,res){
     
 });
 
+app.get('/email',function (req, res) {
+    
+        var myText = req.query.num; //mytext is the name of your input box
+    res.send('Your Text:' +myText);
+    
+    });
 
 
 
