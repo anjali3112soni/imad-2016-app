@@ -35,17 +35,14 @@ body {
       font-size: 12px;
       letter-spacing: 5px;
   }
-  /*.navbar-nav  li a:hover {
+  .navbar-nav  li a:hover {
       color: #1abc9c !important;
-  }*/
+  }
   /*.nav{
       background-color : #ffffff;
       color: #000000;}*/
       
-      .navbar-default{
-    background-color:red;
-    border-color: green;
-}
+     
   
  
   /*carousel*/
